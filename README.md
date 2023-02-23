@@ -5,23 +5,31 @@ ref: [Install TensorFlow with pip](https://www.tensorflow.org/install/pip)
 wsl --install Ubuntu
 
 ## 2. install miniconda3
-2.1 curl https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -o Miniconda3-latest-Linux-x86_64.sh
-2.2 bash Miniconda3-latest-Linux-x86_64.sh
+- curl https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -o Miniconda3-latest-Linux-x86_64.sh
+- bash Miniconda3-latest-Linux-x86_64.sh
 
 ## 3. install VSCode's extension
-3.1 WSL
-3.2 Remote SSH
-3.3 Jupyter
-3.4 Python
+- WSL
+- Remote SSH
+- Jupyter
+- Python
+
+## 4. tensorflow
+- `sudo apt update`
+- `sudo apt install build-essential`
+- `sudo apt-get install manpages-dev`
+- check version if install successfully `gcc --version` [ref](https://linuxize.com/post/how-to-install-gcc-on-ubuntu-20-04/)
+- `pip install -q tf-models-official==2.11.0`
+
 ## Additional
 ### limit memory usage
-1. create .wslconfig by type script in cmd
-- editor "$(wslpath "C:\Users\<YourUsername>\.wslconfig")"
+- `create .wslconfig by type script in cmd`
+- `editor "$(wslpath "C:\Users\<YourUsername>\.wslconfig")"`
 ```
 [wsl2]
 memory=4GB
 ```
-2. Restart wsl
+- Restart wsl
 ```
 wsl --shutdown
 ```
