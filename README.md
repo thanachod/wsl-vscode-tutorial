@@ -23,7 +23,7 @@ wsl --install Ubuntu
 
 ## Additional
 ### limit memory usage
-- `create .wslconfig by type script in cmd`
+- create .wslconfig by type script in cmd
 - `editor "$(wslpath "C:\Users\<YourUsername>\.wslconfig")"`
 ```
 [wsl2]
